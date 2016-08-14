@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <style>
+         div.team1{
+         background-color: #336E7B;
+         color: white;
+         background-image: url("http://www.transparenttextures.com/patterns/ag-square.png");
+         /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+         }
+         #footerwrap1{position:fixed;bottom:0;width:100%;}
+         #footerwrap1{background:#2b2b2b;margin-top:0px;padding-top:4px;padding-bottom:4px;border-bottom:1px solid #ddd;text-align:center;}
+         #footerwrap1 h4{color:white;}
+         #socialLinks{position:absolute;right:0%;padding-top:3.5px;}
+         #socialLinks a i{color:#7FDBBC;}
+         #socialLinks .fb-like:hover{ opacity:0.5;}
+         #socialLinks a i:hover{color:#7FDBBC;opacity:0.5;}
+         @media only screen and (max-width:480px){
+           #socialLinks{position: absolute;top:-1px;font-size: 80%;float: right;padding-top:0px;font-size: 80%;}
+            #footerwrap1{height:6%;background:#2b2b2b;margi5n-top:0px;padding-top:-100px;padding-bottom:10px;border-bottom:0px solid #ddd;text-align:center;}
+            #footerwrap1Heading{position: absolute;top:-9px;font-size: 80%;width: 150px;float: left;}
+
+         }
+         .nav.navbar-nav li a,.dropdown-menu li a{font-family: RalewayMedium; }
+      </style>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Elan 2017 Beta Website">
+      <meta name="author" content="harsh" >
+      <link rel="shortcut icon" href="assets/ico/favicon.png">
+      <title> ELAN 2017 Team
+      </title>
+      <!-- Bootstrap core CSS -->
+      <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+      <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+      <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
+      <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
+      <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
+      <link href="assets/css/main.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/icomoon.css">
+      <link href="assets/css/animate-custom.css" rel="stylesheet">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel='shortcut icon' href='assets/img/favicon.ico' type='image/x-icon'/ >
+      <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+   </head>
+   <body data-spy="scroll" data-target="#myNavbar" data-offset="70">
+     <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+      <div class="team1">
+        <nav id=myNavbar class="navbar navbar-inverse navbar-fixed-top" role=navigation>
+           <div class=container>
+              <div class=navbar-header>
+                <button type=button class=navbar-toggle data-toggle=collapse data-target=#navbarCollapse>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  <!-- <span class="glyphicon glyphicon-stats" style=font-size:30px;color:#c0c0c0></span> -->
+                </button>
+                <a href=./  class="navbar-brand smoothScroll"  >ELAN 2017</a>
+              </div>
+              <div class="collapse navbar-collapse" id=navbarCollapse>
+                 <ul class="nav navbar-nav">
+                     <li><a href=./#about class=smoothScroll>About</a></li>
+                     <li><a href=./#Portfolio class=smoothScroll> Events</a></li>
+                    <li><a href=./#workshop class=smoothScroll>Workshops</a></li>
+                    <li><a href=./#blog class=smoothScroll>Glimpses</a></li>
+                    <!-- <li><a href=team.html target=_blank> Team</a></li> -->
+                    <li><a href=Sponsors.html target=_self>Previous Sponsors</a></li>
+                    <li><a href=campusAmbassador.html  target=_self>Campus Ambassador</a></li>
+                    <li class=dropdown>
+                       <a class=dropdown-toggle data-toggle=dropdown href=#>Feedback<span class=caret></span></a>
+                       <ul class=dropdown-menu>
+                          <li><a href=feedbackElan.php target=_self>Elan Workshop</a></li>
+                          <li><a href=feedbackAzure.php target=_self>Azure Skynet Workshop</a></li>
+                          <li><a href=feedbackEntrench.php target=_self>Entrench Electronics Workshop</a></li>
+                       </ul>
+                    </li>
+                 </ul>
+                 <ul class="nav navbar-nav navbar-right">
+                   <li class="active"><a href="team.html"><span class="glyphicon glyphicon-user"></span> Contact Us</a></li>
+                  </ul>
+              </div>
+           </div>
+        </nav>
+         <nav class="navbar navbar-default ">
+         </nav>
+         <!-- Hospitality back ground -->
+         <!-- ==== TEAM MEMBERS ==== -->
+         <div class="container" id="team" name="team">
+            <div class="row white centered">
+               <h1 class="centered">MEET OUR AWESOME TEAM
+               </h1>
+               <hr>
+               <br>
+               <br>
+               <!-- Hospitality & campus Publicity -->
+               <h2 align="center" style="font-size:24px;">
+                  Hospitality and Campus Publicity
+                  <hr>
+               </h2>
+               <br>
+               <!-- Hospitality & campus Publicity CORE-->
+               <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-4 col-md-offset-4">
+                        <img class="img img-circle" src="assets/img/team/hospiCore.png" height="130px" width="130px" alt="">
+                        <h4>
+                           <strong>Medha Kasula
+                           </strong>
+                        </h4>
+                        <h4>Core
+                        </h4>
+                        <h4>+91-97-0496-9799
+                        </h4>
+                        <h4>&nbsp;&nbsp;&nbsp;medha@elan.org.in
+                        </h4>
+                        <a href="https://www.facebook.com/profile.php?id=100008183086108&fref=ts" target="_blank" style="cursor:pointer;">
+                        <i class="fa fa-facebook" style="font-size:24px">
+                        </i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Hospitality Cood -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/hospiCoord1.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Ashutosh Sharma
+                     </strong>
+                  </h4>
+                  <h4>Hospitality Coordinator
+                  </h4>
+                  <h4>+91-70-3240-1213
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;ashutosh@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/The.Ashutosh.Sharma?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Hospitality Cood -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/hospiCoord2.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>R. Prathima
+                     </strong>
+                  </h4>
+                  <h4>Hospitality Coordinator
+                  </h4>
+                  <h4>+91-95-4216-0701
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;prathima@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/profile.php?id=100011253270969&fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Campus Publicity coordinator Cood -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/cpCoord2.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Revanth Peddi
+                     </strong>
+                  </h4>
+                  <h4>Campus Publicity Coordinator
+                  </h4>
+                  <h4>+91-95-4200-4684
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;revanth@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/Revanth.peddi?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Campus Publicity coordinator Cood -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/cpCoord1.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>C D N Anirudh
+                     </strong>
+                  </h4>
+                  <h4>Campus Publicity Coordinator
+                  </h4>
+                  <h4>+91-94-4117-8324
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;anirudh@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/anirudh.chitturi.3?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <div class="" style="margin-top:1%;">&nbsp;
+               </div>
+               <!-- Online Publicity, Transport and Security -->
+               <!-- Online Publicity, Transport and Security -->
+               <h2 align="center" style="margin-top:3.5%;font-size:24px;">
+                  Online Publicity, Transport and Security
+                  <hr>
+               </h2>
+               <br>
+               <!-- Online Publicity, Transport and Security CORE-->
+               <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-4 col-md-offset-4">
+                        <img class="img img-circle" src="assets/img/team/opCore.png" height="130px" width="130px" alt="">
+                        <h4>
+                           <strong>Vasudha Kapre
+                           </strong>
+                        </h4>
+                        <h4>Core
+                        </h4>
+                        <h4>+91-94-9194-8280
+                        </h4>
+                        <h4>&nbsp;&nbsp;&nbsp;vasudha@elan.org.in
+                        </h4>
+                        <a href="https://www.facebook.com/vasudha.kapre?fref=ts" target="_blank" style="cursor:pointer;">
+                        <i class="fa fa-facebook" style="font-size:24px">
+                        </i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Online Publicity Coordinator -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/opCoord2.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Atul Raj
+                     </strong>
+                  </h4>
+                  <h4>Online Publicity Coordinator
+                  </h4>
+                  <h4>+91-77-7991-5930
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;atul@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/atulraj297?ref=br_rs" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Online Publicity Coordinator -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/opCoord.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Ishan A Maurya
+                     </strong>
+                  </h4>
+                  <h4>Online Publicity Coordinator
+                  </h4>
+                  <h4>+91-94-2643-1955
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;ishan@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/pluto1515?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Transport Coordinator  -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/transportCoord.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>B. Harsha
+                     </strong>
+                  </h4>
+                  <h4>Transport Coordinator
+                  </h4>
+                  <h4>+91-94-9440-4949
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;harsha.b@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/sai.harsha.14661?fref=grp_mmbr_list" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Security Coordinator  -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/securityCood.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Rajesh Varagani
+                     </strong>
+                  </h4>
+                  <h4>Security Coordinator
+                  </h4>
+                  <h4>+91-98-6642-3770
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;rajesh@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/rajesh.varagani.3" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <div class="" style="margin-top:1%;">&nbsp;
+               </div>
+               <!-- Events -->
+               <!-- Events Core -->
+               <h2 align="center" style="margin-top:3.5%;font-size:24px;">
+                  Events
+                  <hr>
+               </h2>
+               <br>
+               <!-- events CORE-->
+               <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-4 col-md-offset-4">
+                        <img class="img img-circle" src="assets/img/team/eventsCore.png" height="130px" width="130px" alt="">
+                        <h4>
+                           <strong>Harsha Jaladi
+                           </strong>
+                        </h4>
+                        <h4>Core
+                        </h4>
+                        <h4>+91-76-7404-3430
+                        </h4>
+                        <h4>&nbsp;&nbsp;&nbsp;harsha@elan.org.in
+                        </h4>
+                        <a href="https://www.facebook.com/name.is.harsha?fref=ts" target="_blank" style="cursor:pointer;">
+                        <i class="fa fa-facebook" style="font-size:24px">
+                        </i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Culti Events Coordinator -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/cultiCoord.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>D Nanda Kumar
+                     </strong>
+                  </h4>
+                  <h4>Culti Events Coordinator
+                  </h4>
+                  <h4>+91-95-7395-0314
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;nanda@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/nandu007d?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Techy Events Coordinator -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/techyCoord.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Lalith Sai
+                     </strong>
+                  </h4>
+                  <h4>Techy Events Coordinator
+                  </h4>
+                  <h4>+91-96-5224-3426
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;lalith@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/lalith.sai.srinivas?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Infi Events Coordinator  -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/infiCoord.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Anand Swain
+                     </strong>
+                  </h4>
+                  <h4>Infi Events Coordinator
+                  </h4>
+                  <h4>+91-94-9018-9175
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;anand@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/anand.swain.97?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Litr Events Coordinator  -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/litrCoord.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Abhinau Kumar
+                     </strong>
+                  </h4>
+                  <h4>Litr Events Coordinator
+                  </h4>
+                  <h4>+91-94-4532-9736
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;abhi@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/nownow.21?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Biggies Coordinator -->
+               <div class="col-lg-1 centered" style="margin-right:5%;">
+               </div>
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/biggieCoord1.jpg" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Yash Pitroda
+                     </strong>
+                  </h4>
+                  <h4>Biggies Coordinator
+                  </h4>
+                  <h4>+91-95-0546-4597
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;yash@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/yash.pitroda1?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Workshops Coordinator -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/workshopCoord.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Siddharth Sonkamble
+                     </strong>
+                  </h4>
+                  <h4>Workshops Coordinator
+                  </h4>
+                  <h4>+91-96-1949-7727
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;siddharth@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/siddharth.sonkamble.161?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Social Causes Coordinator -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/socialCoord.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Sai Suman Kumar
+                     </strong>
+                  </h4>
+                  <h4>Social Causes Coordinator
+                  </h4>
+                  <h4>+91-98-6648-5313
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;suman.k@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/profile.php?id=100007366119357&fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <div class="col-lg-1 centered" style="margin-right:5%;">
+               </div>
+               <div class="" style="margin-top:2%;">&nbsp;
+               </div>
+               <!-- Creatives -->
+               <!-- Creatives Core -->
+               <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-5 col-md-offset-2">
+                        <h2 align="center" style="margin-bottom:-8%;margin-top:50px;font-size:24px;">Creatives
+                        </h2>
+                        <br>
+                        <br>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <br>
+               <br>
+               <br>
+               <!-- Creatives CORE-->
+               <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-4 col-md-offset-4">
+                        <img class="img img-circle" src="assets/img/team/creatCore.png" height="130px" width="130px" alt="">
+                        <h4>
+                           <strong>Shruti Bhatambre
+                           </strong>
+                        </h4>
+                        <h4>Core
+                        </h4>
+                        <h4>+91-94-9100-5093
+                        </h4>
+                        <h4>&nbsp;&nbsp;&nbsp;shruti@elan.org.in
+                        </h4>
+                        <a href="https://www.facebook.com/shruti.bhatambre?fref=ts" target="_blank" style="cursor:pointer;">
+                        <i class="fa fa-facebook" style="font-size:24px">
+                        </i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Arts Coordinator -->
+               <div class="col-lg-1 centered" style="margin-right:5%;">
+               </div>
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/creatCood1.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Gaurav Chobe
+                     </strong>
+                  </h4>
+                  <h4>Arts Coordinator
+                  </h4>
+                  <h4>+91-84-1185-6554
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;gaurav.c@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/gaurav.chobe21?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Arts Coordinator -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/creatCood3.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Chirayu Kothari
+                     </strong>
+                  </h4>
+                  <h4>Arts Coordinator
+                  </h4>
+                  <h4>+91-96-4262-1323
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;chirayu@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/chirayu.kothari.1?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Arts Coordinator -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/creatCood2.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Shivom Kumar
+                     </strong>
+                  </h4>
+                  <h4>Arts Coordinator
+                  </h4>
+                  <h4>+91-91-7729-6448
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;shivom@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/profile.php?id=100012115215925&fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <div class="col-lg-1 centered" style="margin-right:5%;">
+               </div>
+               <!-- Multimedia Coordinator -->
+               <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-5 col-md-offset-2">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-2 centered" style="margin-right:8%;">
+               </div>
+               <div class="col-lg-3 centered" style="margin-top:0%;">
+                  <img class="img img-circle" src="assets/img/team/multiCood.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Chaitanya Bhagwat
+                     </strong>
+                  </h4>
+                  <h4>Multimedia Coordinator
+                  </h4>
+                  <h4>+91-90-5273-3010
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;chaitanya@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/chait.bhagwat?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- Multimedia Coordinator -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/multiCood2.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Pankaj Kukreja
+                     </strong>
+                  </h4>
+                  <h4>Asst. Multimedia Coordinator
+                  </h4>
+                  <h4>+91-90-5273-3010
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;pankaj@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/chait.bhagwat?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <div class="" style="margin-top:2%;">&nbsp;
+               </div>
+               <!-- Web Coordinator -->
+               <div class="col-lg-3 centered" style="margin-right:1%;">
+               </div>
+               <div class="col-lg-3 centered" style="margin-top:1%;margin-left:-1%;">
+                  <img class="img img-circle" src="assets/img/team/webCood1.jpg" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Harsh Agarwal
+                     </strong>
+                  </h4>
+                  <h4>Web Coordinator
+                  </h4>
+                  <h4>+91-84-0070-0457
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;harsh@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/harshaga97" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- Infrastructure Coordinator -->
+               <div class="col-lg-3 centered" style="margin-top:1%;margin-left:0.8%;">
+                  <img class="img img-circle" src="assets/img/team/webCood2.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Prasanth Mamakar
+                     </strong>
+                  </h4>
+                  <h4>Web Coordinator
+                  </h4>
+                  <h4>+91-96-4091-0652
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;mamakar@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/prasanth.mamakar?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <div class="" style="margin-top:2%;">&nbsp;
+               </div>
+               <!-- Marketing Publicity -->
+               <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-4 col-md-offset-4">
+                        <h2 align="center" style="margin-bottom:-15%;margin-top:50px;font-size:24px;">Marketing
+                        </h2>
+                        <br>
+                        <br>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <br>
+               <!-- Marketing CORE-->
+               <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-4 col-md-offset-4">
+                        <img class="img img-circle" src="assets/img/team/marketCore.png" height="130px" width="130px" alt="">
+                        <h4>
+                           <strong>Abhishek Rajput
+                           </strong>
+                        </h4>
+                        <h4>Core
+                        </h4>
+                        <h4>+91-77-2695-6570
+                        </h4>
+                        <h4>&nbsp;&nbsp;&nbsp;abhishek.r@elan.org.in
+                        </h4>
+                        <a href="https://www.facebook.com/profile.php?id=100001050801477&fref=ts" target="_blank" style="cursor:pointer;">
+                        <i class="fa fa-facebook" style="font-size:24px">
+                        </i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!--   Marketing Coordinator -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/marketCoord2.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Bazar Srujan Kumar
+                     </strong>
+                  </h4>
+                  <h4>Marketing Coordinator
+                  </h4>
+                  <h4>+91-98-6630-3390
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;srujan@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/srujanbazar?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!--   Marketing Coordinator  -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/marketCoord4.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Abhinav Gupta
+                     </strong>
+                  </h4>
+                  <h4>Marketing Coordinator
+                  </h4>
+                  <h4>+91-95-3334-9101
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;abhinav@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/abhinav.gupta1697?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!--   Marketing Coordinator  -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/marketCoord1.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Sukrut Rao
+                     </strong>
+                  </h4>
+                  <h4>Marketing Coordinator
+                  </h4>
+                  <h4>+91-96-0324-8560
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;sukrut@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/sukrut.rao?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!--   Marketing Coordinator  -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/marketCoord3.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>R. Raaghav
+                     </strong>
+                  </h4>
+                  <h4>Marketing Coordinator
+                  </h4>
+                  <h4>+91-95-1540-9134
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;raaghav@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/Raaghav.ravi97" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <div class="" style="margin-top:2%;">&nbsp;
+               </div>
+               <!-- Finance  -->
+               <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-4 col-md-offset-4">
+                        <h2 align="center" style="margin-bottom:-18%;font-size:24px;">Finance
+                        </h2>
+                        <br>
+                        <br>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <br>
+               <!-- Finance Core-->
+               <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-4 col-md-offset-4">
+                        <img class="img img-circle" src="assets/img/team/financeCore.png" height="130px" width="130px" alt="">
+                        <h4>
+                           <strong>Vaibhav Singh
+                           </strong>
+                        </h4>
+                        <h4>Core
+                        </h4>
+                        <h4>+91-99-4872-9250
+                        </h4>
+                        <h4>&nbsp;&nbsp;&nbsp;vaibhav@elan.org.in
+                        </h4>
+                        <a href="https://www.facebook.com/vaibhav.singh.330?fref=nf" target="_blank" style="cursor:pointer;">
+                        <i class="fa fa-facebook" style="font-size:24px">
+                        </i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Arts Coordinator -->
+               <div class="col-lg-1 centered" style="margin-right:5%;">
+               </div>
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/financeCoord.png" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>S Suprabath Reddy
+                     </strong>
+                  </h4>
+                  <h4>Finance Coordinator
+                  </h4>
+                  <h4>+91-90-1050-1499
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;suprabath@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/suprabathreddy9" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Arts Coordinator -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/infraCoord.jpeg" height="130px" width="125px" alt="">
+                  <h4>
+                     <strong>Ambuj Sinha
+                     </strong>
+                  </h4>
+                  <h4>Infrastructure Coordinator
+                  </h4>
+                  <h4>+91-87-9049-8126
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;ambuj@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/ambuj05?fref=ts"  target="_blank" style="cursor:pointer;">
+                    <i class="fa fa-facebook" style="font-size:24px">
+                    </i>
+                    </a>
+               </div>
+               <!-- col-lg-3 -->
+               <!-- Arts Coordinator -->
+               <div class="col-lg-3 centered">
+                  <img class="img img-circle" src="assets/img/team/asstinfra.jpg" height="130px" width="130px" alt="">
+                  <h4>
+                     <strong>Karan Jindal
+                     </strong>
+                  </h4>
+                  <h4>Asst. Infrastructure Coordinator
+                  </h4>
+                  <h4>+91-87-9049-8126
+                  </h4>
+                  <h4>&nbsp;&nbsp;&nbsp;karan@elan.org.in
+                  </h4>
+                  <a href="https://www.facebook.com/karan.jindal.146?fref=ts" target="_blank" style="cursor:pointer;">
+                  <i class="fa fa-facebook" style="font-size:24px">
+                  </i>
+                  </a>
+               </div>
+               <!-- col-lg-3 -->
+               <div class="col-lg-1 centered" style="margin-right:1%;">
+               </div>
+               <!-- Finance  -->
+               <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-4 col-md-offset-4">
+                        <h2 align="center" style="margin-bottom:-18%;font-size:24px;">Overall Coordinator
+                        </h2>
+                        <br>
+                        <br>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <br>
+               <!-- Finance Core-->
+               <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-4 col-md-offset-4">
+                        <img class="img img-circle" src="assets/img/team/overallCoord.png" height="130px" width="130px" alt="">
+                        <h4>
+                           <strong>Surender Chauhan
+                           </strong>
+                        </h4>
+                        <h4>+91-95-8111-s5462
+                        </h4>
+                        <h4>&nbsp;&nbsp;&nbsp;surender@elan.org.in
+                        </h4>
+                        <a href="https://www.facebook.com/surender.chauhan.7399?fref=nf" target="_blank" style="cursor:pointer;">
+                        <i class="fa fa-facebook" style="font-size:24px">
+                        </i>
+                        </a>
+                     </div>
+                  </div>
+                  <br><br>
+               </div>
+            </div>
+            <!-- row -->
+         </div>
+         <!-- container -->
+      </div>
+      <!-- team1 -->
+      <div id=footerwrap1>
+         <div class=container>
+            <span class=col-sm-4>
+              <a href="hapticsroboarm" target="_blank">
+                <button type="button" class="btn btn-danger btn-sm" style="float:left;margin-top:3px;font-size: 13px;font-weight: bold;">HAPTICS ROBOARM WORKSHOP</button>
+              </a>
+             </span>
+            <span class=col-sm-4>
+               <h4 id="footerwrap1Heading">Created by <a href="./">Elan</a> - Copyright 2017</h4>
+            </span>
+            <span class="col-sm-4" id=socialLinks>
+            <a href=https://twitter.com/ELAN_IITH target=_blank><i class="fa fa-twitter"></i></a>
+            &nbsp;&nbsp;&nbsp;
+             <a href=https://www.facebook.com/elan.iithyderabad/?fref=ts target=_blank><i class="fa fa-facebook"></i></a>
+             &nbsp;&nbsp;&nbsp;
+ <!--
+<div class="fb-like" data-href="https://www.facebook.com/elan.iithyderabad/?fref=ts" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
+-->
+
+<button type="button" id="faceBookLike" class="btn btn-primary btn-xs" name="button">Like</button>
+<div class="Fbpage">
+  <iframe style="border: none; overflow: hidden; width: 100%; height: 600px; background: white; float: left;" src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/elan.iithyderabad/?fref=ts;width=300&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=600" width="300" height="150" frameborder="0" scrolling="yes"></iframe>
+</div>
+<!-- <div class="fb-like" data-href="https://www.facebook.com/elan.iithyderabad/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div> -->
+&nbsp;&nbsp;&nbsp;
+ <a href=https://www.youtube.com/user/ElanIITHyderabad target=_blank><i class="fa fa-youtube-play"></i></a>
+
+            </span>
+         </div>
+      </div>
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script type="text/javascript" src="assets/js/jquery.1.8.3.min.js"></script>
+      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+   </body>
+</html>

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang=en>
+   <head>
+      <style>
+         div.blog h1 {
+         color: black
+         }
+         div.galler h2 {
+         color: #333
+         }
+         div.blog h2 {
+         color: black
+         }
+         div.events {
+         background-color: #81cfe0;
+         font-family: 'Josefin Sans', sans-serif;
+         background-image: url("http://www.transparenttextures.com/patterns/ag-square.png")
+         }
+         div.workshop {
+         background-color: #336e7b;
+         color: white;
+         background-image: url("http://www.transparenttextures.com/patterns/ag-square.png")
+         }
+         div.about_us {
+         font-family: 'Josefin Sans', sans-serif;
+         font-size: 20px;
+         word-spacing: 15px;
+         letter-spacing: 2px
+         }
+         div.back_about {
+         background-color: #00ccb1;
+         background-image: url("http://www.transparenttextures.com/patterns/ag-square.png");
+         background-repeat: no-repeat
+         }
+         div.about_us2 {
+         font-family: 'Josefin Sans', sans-serif;
+         font-size: 20px;
+         word-spacing: 10px;
+         letter-spacing: 3px
+         }
+         div.blog {
+         background-color: #f5e075
+         }
+      </style>
+      <meta charset=utf-8>
+      <meta name=viewport content="width=device-width, initial-scale=1.0">
+      <meta name=description content="Elan 2017 Beta Website">
+      <!-- <meta name=author content=elan> -->
+      <meta property=og:url content='http://elan.org.in/' />
+      <meta property=og:type content=website />
+      <meta property=og:title content="ELAN 2017"/>
+      <meta property=og:description content="ELAN 2017 Beta Website"/>
+      <meta property=og:image content="http://elan.org.in/assets/img/bg/bg.jpg"/>
+      <title>ELAN 2017 Beta</title>
+      <link href=assets/css/bootstrap.css rel=stylesheet type=text/css>
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel=stylesheet>
+      <link href=assets/css/style.css rel=stylesheet type=text/css>
+      <link href=assets/css/font-awesome.css rel=stylesheet type=text/css>
+      <link href=assets/css/responsive.css rel=stylesheet type=text/css>
+      <link href=assets/css/animate.css rel=stylesheet type=text/css>
+      <link href=assets/css/main.css rel=stylesheet>
+      <link rel=stylesheet href=assets/css/icomoon.css>
+      <link href=assets/css/animate-custom.css rel=stylesheet>
+      <link rel=stylesheet href=http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css>
+      <link rel='shortcut icon' href=assets/img/favicon.ico type='image/x-icon'/>
+      <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel=stylesheet type=text/css>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel=stylesheet type=text/css>
+      <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel=stylesheet type=text/css>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel=stylesheet type=text/css>
+   </head>
+   <body data-spy=scroll data-target=#myNavbar data-offset=70>
+     <div id="fb-root"></div>
+<!-- <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script> -->
+      <nav id=myNavbar class="navbar navbar-inverse navbar-fixed-top" role=navigation>
+         <div class=container>
+            <div class=navbar-header>
+              <button type=button class=navbar-toggle data-toggle=collapse data-target=#navbarCollapse>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href=#home  class="navbar-brand smoothScroll"  >ELAN 2017</a>
+            </div>
+            <div class="collapse navbar-collapse" id=navbarCollapse>
+               <ul class="nav navbar-nav">
+                   <li><a href=#about class=smoothScroll>About</a></li>
+                   <li><a href=#Portfolio class=smoothScroll> Events</a></li>
+                  <li><a href=#workshop class=smoothScroll>Workshops</a></li>
+                  <li><a href=#blog class=smoothScroll>Glimpses</a></li>
+                  <!-- <li><a href=team.html target=_blank> Team</a></li> -->
+                  <li><a href=Sponsors.html target=_blank>Previous Sponsors</a></li>
+                  <li><a href=campusAmbassador.html target=_blank>Campus Ambassador</a></li>
+                  <li class=dropdown>
+                     <a class=dropdown-toggle data-toggle=dropdown href=#>Feedback<span class=caret></span></a>
+                     <ul class=dropdown-menu>
+                        <li><a href=feedbackElan.php target=_blank>Elan Workshop</a></li>
+                        <li><a href=feedbackAzure.php target=_blank>Azure Skynet Workshop</a></li>
+                        <li><a href=feedbackEntrench.php target=_blank>Entrench Electronics Workshop</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="nav navbar-nav navbar-right">
+                 <li><a href="team.html" target="_blank"><span class="glyphicon glyphicon-user"></span> Contact Us</a></li>
+                </ul>
+            </div>
+         </div>
+      </nav>
+      <div id=headerwrap id=home name=home>
+         <header class=clearfix>
+            <h1><span></span></h1>
+            <p></p>
+            <p></p>
+            <a href=#greywrap id=downButton class=smoothScroll><img src=assets/img/arrow2.png alt=/ id=arrow style=background:transparent;width:100px;height:100px class=img-responsive></a>
+         </header>
+      </div>
+      <div class=galler>
+         <div id=greywrap>
+            <div class=row>
+               <div class="col-lg-6 callout">
+                  <a href=team.html target=_blank>
+                     <br><br><span class="icon icon-stack"></span>
+                     <h2>Team</h2>
+                     <p>Meet Our Awesome Team</p>
+                  </a>
+               </div>
+               <div class="col-lg-6 callout" id=gallery1>
+                  <a href=./Gallery/gallery.html target=_blank>
+                     <br><br><span class="icon icon-stack"></span>
+                     <h2>Gallery</h2>
+                     <p>Glimpses Of Elan For You</p>
+                  </a>
+               </div>
+               <!-- <div class="col-lg-4 callout">
+                  <a href=#blog class=smoothscroll>
+                     <br><br><span class="icon icon-stack"></span>
+                     <h2>Glimpses</h2>
+                     <p></p>
+                  </a>
+                  </div> -->
+            </div>
+         </div>
+      </div>
+      <div class=back_about style=background-color:#27b095>
+         <div class=container id=about name=about>
+            <div class="row white">
+               <br><br>
+               <br><br>
+               <h1 class=centered>A LITTLE ABOUT ELAN</h1>
+               <hr>
+               <div class=col-lg-6 style=text-align:left>
+                  <div class=about_us>
+                     <p style="font-size:15px;align:center;font-family:'RalewayMedium'">Energy , Style And Enthusiasm<br>ELAN, a mesmerizing unification of Energy, Style and Enthusiasm is all set to hold Hyderabad spellbound once again, with its eighth edition being launched at the start of 2017.<br>This Annual Inter­College “Techno­Cultural” festival of IIT Hyderabad promises a plethora of events to stupefy and ensorcell both epicurean and boisterous tastes alike. Since its dawn in 2009 by dreadfully talented students, Elan has left a special memory in the hearts of each and every participant, visitor and organizer.</p>
+                     <p><br></p>
+                  </div>
+               </div>
+               <div class=col-lg-6 style=text-align:left>
+                  <div class=about_us>
+                     <p style="font-size:15px;align:center;font-family:'RalewayMedium'">Keeping up with the sucessful 3­ day model, ELAN 2017 is well stocked with events from the Biggies , Cultural (Culti), Technical (Techy), Informal (Infi) , Literary (Litr) , Online domains. Each event is finely crafted to reflect the avid ardor in appreciating and experiencing genuine inspiration in art, music and technology that is the culture of Elan.<br>Elan is an adventure filled with Energy , Tashaan and Enthusiasm.<br>Its an odyssey worth enduring !!!.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Events container -->
+      <div class=events>
+         <section class="main-section paddind">
+            <div class=container>
+               <p id=Portfolio><br></p>
+               <h2>Events</h2>
+               <h6>Never ending ethusiasum</h6>
+               <div class=portfolioFilter>
+                  <ul class="Portfolio-nav wow fadeIn delay-02s" id="PortfolioList">
+                     <li><a href=# data-filter=* class=current>All</a></li>
+                     <li><a href=# data-filter=.branding>Biggies</a></li>
+                     <li><a href=# data-filter=.webdesign>Culti</a></li>
+                     <li><a href="#" data-filter=.technical>Techy</a></li>
+                     <li><a href=# data-filter=.printdesign>Infi</a></li>
+                     <li><a href=# data-filter=.photography>Litr</a></li>
+                     <li><a href=# data-filter=.online>Online</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class=about_us>
+               <div class="portfolioContainer wow fadeInUp delay-04s">
+                  <div class="Portfolio-box branding grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic1.jpg alt>
+                        <figcaption>
+                           <p>Watch as the stage is converted into a battlefield as the bands sweat it out in a winner-get-all-no-holds-barred contest.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>Elan-E-Jung</h3>
+                  </div>
+                  <div class="Portfolio-box branding grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic2.jpg alt>
+                        <figcaption>
+                           <p>Lose yourself in the lilting guitar music dished out by the score.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>Manthan</h3>
+                  </div>
+                  <div class="Portfolio-box branding grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic3.jpg alt>
+                        <figcaption>
+                           <p>Zonal auditions held in ELAN 2016 , adjudged by Aafreen Vaz.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>CAMPUS PRINCESS AUDITION</h3>
+                  </div>
+                  <div class="Portfolio-box webdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic4.jpg alt>
+                        <figcaption>
+                           <p>A competition where the dancers must captivate the audience with their immense dancing talent.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>BREAKFREE</h3>
+                  </div>
+                  <div class="Portfolio-box webdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic5.jpg alt>
+                        <figcaption>
+                           <p>Shake a leg.<br>Twist your body.<br>Break your neck.<br>It's time to LET GO.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>LOOSE YOUR FEET</h3>
+                  </div>
+                  <div class="Portfolio-box webdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic6.jpg alt>
+                        <figcaption>
+                           <p>A perfect traditional touch for the cultural extravaganza.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>NRITYANJALI</h3>
+                  </div>
+                  <div class="Portfolio-box webdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic7.jpg alt>
+                        <figcaption>
+                           <p>
+                              A perfect event for a pair of dancers.
+                           </p>
+                        </figcaption>
+                     </figure>
+                     <h3>JUST DUET</h3>
+                  </div>
+                  <div class="Portfolio-box webdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic8.jpg alt>
+                        <figcaption>
+                           <p>A battle of singing where the contestants pellbind with their harmonious notes.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>VIBRAZIONE</h3>
+                  </div>
+                  <div class="Portfolio-box webdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic10.jpg alt>
+                        <figcaption>
+                           <p>
+                              Can you add your intricate details creatively on much smaller canvas like finger nails?
+                           </p>
+                        </figcaption>
+                     </figure>
+                     <h3>NAIL ART</h3>
+                  </div>
+                  <div class="Portfolio-box webdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic11.jpg alt>
+                        <figcaption>
+                           <p>
+                              Let the henna flow out of your cones and let's see what color it brings to your life.
+                           </p>
+                        </figcaption>
+                     </figure>
+                     <h3>MEHNDI ART</h3>
+                  </div>
+                  <div class="Portfolio-box webdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic12.jpg alt>
+                        <figcaption>
+                           <p>
+                              Come! Bring life to figments of your own thoughts and imaginations by moulding beautiful structures out of clay!
+                           </p>
+                        </figcaption>
+                     </figure>
+                     <h3>CLAY MODELLING</h3>
+                  </div>
+                  <div class="Portfolio-box webdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic9.jpg alt>
+                        <figcaption>
+                           <p>Wanna have some fun with painting?. You think you can have a face funkier than infamous "THE MASK".</p>
+                        </figcaption>
+                     </figure>
+                     <h3>FACE PAINTING</h3>
+                  </div>
+                  <div class="Portfolio-box technical grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic19.jpg alt>
+                        <figcaption>
+                           <p>I can't hear you over the sounds of robots being destroyed.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>ROBO WARS</h3>
+                  </div>
+                  <div class="Portfolio-box technical grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic20.png alt>
+                        <figcaption>
+                           <p>Amaze all by coding your way out of the maze.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>HACK A MAZE</h3>
+                  </div>
+                  <div class="Portfolio-box technical grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic21.jpg alt>
+                        <figcaption>
+                           <p>This is where you will find the smallest footallers in town.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>ROBO SOCCER</h3>
+                  </div>
+                  <div class="Portfolio-box technical grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic22.jpg alt>
+                        <figcaption>
+                           <p>Can your work hold off against more than waht you bargained for?</p>
+                        </figcaption>
+                     </figure>
+                     <h3>BRIDGE BUILDER</h3>
+                  </div>
+                  <div class="Portfolio-box technical grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic23.png alt>
+                        <figcaption>
+                           <p>It's a dare!A challenge!No fuel , just water.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>AQUA ROCKET</h3>
+                  </div>
+                  <div class="Portfolio-box technical grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic24.jpg alt>
+                        <figcaption>
+                           <p>As in life, make the best of what little you are provided with.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>PROJECT X</h3>
+                  </div>
+                  <div class="Portfolio-box technical grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic25.jpg alt>
+                        <figcaption>
+                           <p>Fashion your own telescope and take a peak into the space.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>BUILD A GAZE</h3>
+                  </div>
+                  <div class="Portfolio-box technical grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic26.jpg alt>
+                        <figcaption>
+                           <p>Are you wired to win?</p>
+                        </figcaption>
+                     </figure>
+                     <h3>ELECTRONIC CHAMP</h3>
+                  </div>
+                  <div class="Portfolio-box technical grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic27.png alt>
+                        <figcaption>
+                           <p>Stay afloat to stay alive.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>PIRATES</h3>
+                  </div>
+                  <div class="Portfolio-box printdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic13.jpg alt>
+                        <figcaption>
+                           <p>Most anticipated event that depicts the zenith of glitziness and glamour.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>WALK THE RAMP</h3>
+                  </div>
+                  <div class="Portfolio-box printdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic14.jpg alt>
+                        <figcaption>
+                           <p>This contains the traditional one minute games to end a tiring day. The events will be simple and fun-filled.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>MINUTE TO WIN IT</h3>
+                  </div>
+                  <div class="Portfolio-box printdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic15.jpg alt>
+                        <figcaption>
+                           <p>Everyone's a gamer.<br>Not everyone's a winner.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>LAN GAMING</h3>
+                  </div>
+                  <div class="Portfolio-box printdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic16.jpg alt>
+                        <figcaption>
+                           <p>Scratch your head to think and scratch your leg if you fall!!</p>
+                        </figcaption>
+                     </figure>
+                     <h3>FINAL DESTINATION</h3>
+                  </div>
+                  <div class="Portfolio-box printdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic17.jpg alt>
+                        <figcaption>
+                           <p>The participants need to produce an AD for the product (funny or crazy) given to them.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>MAD ADS</h3>
+                  </div>
+                  <div class="Portfolio-box printdesign grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/Portfolio-pic18.jpg alt>
+                        <figcaption>
+                           <p>This event basically aims at the interaction of our august crowd among themselves.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>CONVERSATION COFFEE</h3>
+                  </div>
+                  <div class="Portfolio-box photography grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/mrdetective.jpg alt>
+                        <figcaption>
+                           <p>Unravel all the clues hidden in plain sight and be the first to get to the bottom of the mystery.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>MR. DETECTIVE</h3>
+                  </div>
+                  <div class="Portfolio-box photography grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/wheel-of-fortune.jpg alt>
+                        <figcaption>
+                           <p>A fun event that combines luck and knowledge,point determined by the number spun on the wheel.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>WHEEL OF FORTUNE</h3>
+                  </div>
+                  &nbsp;
+                  <div class="Portfolio-box photography grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/quizzes.jpg alt>
+                        <figcaption>
+                           <p>Set of themed quizzes, and there's one for everybody. The jacks of all trades participate in various rounds of the general quiz.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>QUIZ CONCLAVE</h3>
+                  </div>
+                  <div class="Portfolio-box photography grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/jam.jpg alt>
+                        <figcaption>
+                           <p>You've got a minute to win it.<br>Good Luck.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>JUST A MINUTE</h3>
+                  </div>
+                  <div class="Portfolio-box photography grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/businessquiz.jpg alt>
+                        <figcaption>
+                           <p> Trade and Beyond in association with Elan , IIT Hyderabad Invited students for its campus quiz during the fest</p>
+                        </figcaption>
+                     </figure>
+                     <h3>BUSINESS QUIZ</h3>
+                  </div>
+                  <div class="Portfolio-box online grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/pixeladda.jpg alt>
+                        <figcaption>
+                           <p>Get behind the lens and shoot away.<br>Picture with maximum likes wins.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>PIXEL ADDA</h3>
+                  </div>
+                  <div class="Portfolio-box online grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/zodiac.jpg alt>
+                        <figcaption>
+                           <p>Be ready for mind wars in our exhilarating online event.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>ZODIAC</h3>
+                  </div>
+                  <div class="Portfolio-box online grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/sweetheart.jpg alt>
+                        <figcaption>
+                           <p>Pour your soul into the paper and tell your beloved how much you care.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>SWEET HEART</h3>
+                  </div>
+                  <div class="Portfolio-box online grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/tweetatale.jpg alt>
+                        <figcaption>
+                           <p>Tragedy, suspense, romance, comedy, fantasy or biography- you'd be surprised at what you can do with 140 characters!</p>
+                        </figcaption>
+                     </figure>
+                     <h3>TWEET-A-TALE</h3>
+                  </div>
+                  <div class="Portfolio-box online grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/twistit.jpg alt>
+                        <figcaption>
+                           <p>Ever wondered what would’ve happened if Cinderella never left her shoe behind? Or, if Snow White hadn’t met the dwarves?</p>
+                        </figcaption>
+                     </figure>
+                     <h3>TWIST IT</h3>
+                  </div>
+                  <div class="Portfolio-box online grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/skipit.jpg alt>
+                        <figcaption>
+                           <p>Have you ever realized how difficult it is to ignore a certain letter of the alphabet completely? </p>
+                        </figcaption>
+                     </figure>
+                     <h3>SKIP IT</h3>
+                  </div>
+                  <div class="Portfolio-box online grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/tellatale.jpg alt>
+                        <figcaption>
+                           <p>Here's your chance to break free from the convention and pen down a story of few words.</p>
+                        </figcaption>
+                     </figure>
+                     <h3>TELL-A-TALE</h3>
+                  </div>
+                  <div class="Portfolio-box online grid1">
+                     <figure class=effect-ming>
+                        <img class=img-responsive src=assets/img/whatsapp.jpg alt>
+                        <figcaption>
+                           <p>WhatsApp statuses are a way of letting all our friends know about our day in a line or two. </p>
+                        </figcaption>
+                     </figure>
+                     <h3>STATE YOUR STATUS</h3>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <style media="screen">
+      .workshop {
+  position: relative;
+}
+.workSponsorDesktop {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+ }
+      </style>
+       <div class=workshop>
+         <div class=container name=workshop>
+             <div class="row white centered">
+               <div id=workshop>&nbsp;</div>
+               <!-- <br><br><br><br><br><br><br><br> -->
+               <h1 class=centered>Workshops
+                 <!-- <div class="workSponsorDesktop">
+
+                   <a href="http://azureskynet.com/" class="col-xs-4" target="_blank" id="workshopLogo">
+                     <img class="img img-circle" src="assets/img/workshop/azure.png" height="55px" width="55px" alt="">
+                     <h4>
+                        <strong>
+                          <small>Azure Skynet</small>
+                         </strong>
+                     </h4>
+                   </a>
+                   <a href="http://entrench.in/" class="col-xs-4" target="_blank" id="workshopLogo">
+                     <img class="img img-circle" src="assets/img/workshop/entrench.jpg" height="55px" width="55px" alt="">
+                     <h4>
+                        <strong>
+                          <small>Entrench Electronics</small>
+                         </strong>
+                     </h4>
+                   </a>
+                 </div> -->
+
+
+               </h1><hr>
+               <div id="workshopSponsorMobile" >
+                 <h3 class=centered>OutReach&nbsp;&nbsp;Partners</h3>
+                                 <div class="container" id="team" name="team">
+                                    <div class="row white centered">
+                                      <div class="col-lg-3">
+
+                                      </div>
+                                 <div class="col-lg-3 centered" style="margin-top:0%;">
+                                   <a href="http://azureskynet.com/" target="_blank" id="workshopLogo">
+                                     <img class="img img-circle" src="assets/img/workshop/azure.png" height="55px" width="55px" alt="">
+                                     <h4>
+                                        <strong>
+                                          <small style="color:white;">Azure Skynet</small>
+
+                                        </strong>
+                                     </h4>
+                                   </a>
+
+                                 </div>
+                                 <!-- Multimedia Coordinator -->
+                                 <div class="col-lg-3 centered">
+                                   <a href="http://entrench.in/" target="_blank" id="workshopLogo">
+                                     <img class="img img-circle" src="assets/img/workshop/entrench.jpg" height="55px" width="55px" alt="">
+                                     <h4>
+                                        <strong>
+                                          <small style="color:white;">Entrench Electronics</small>
+                                        </strong>
+                                     </h4>
+                                   </a>
+
+                                 </div>
+
+                               </div>
+                             </div>
+
+               </div>
+
+
+<br>
+               <h3 class=centered>Upcoming&nbsp;&nbsp;Workshop</h3>
+
+<br>
+                 <div class="container container-table">
+                  <div class="row vertical-center-row">
+                     <div class="text-center col-md-4 col-md-offset-4">
+                       <a href="hapticsroboarm" target="_blank" id="workshopLogo"ss>
+                         <img class="img" src="assets/img/workshop/roboticArm2.jpg" style="width:400px;height:250px;" alt="">
+                         <h4>
+                            <strong>
+                              <h2> <strong>Haptics&nbsp;&nbsp;Roboarm<br>Workshop</strong> </h2>
+                              <h4><strong>27th & 28th August 2016</strong> </h4>
+
+                            </strong>
+                         </h4>
+                       </a>
+
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- <h2 align=center style=font-size:24px>Coming Soon</h2>
+               <br>
+               <br><br><br><br><br><br>
+               <br><br><br><br><br> -->
+            </div>
+         </div>
+      </div>
+      <div class=blog style="background-image:url('assets/img/bg/ag-square.png'); background-color:#f5e075;">
+         <div class=container name=blog>
+            <br>
+            <div class=row>
+               <br>
+               <h1 class=centered id=blog>GLIMPSES</h1>
+               <hr>
+               <br><br>
+            </div>
+            <div class=row>
+               <div class="col-lg-6 blog-bg" style="background-color:#d3b741;">
+                  <div class="col-lg-4 centered" >
+                     <br>
+                     <p><img class="img img-circle" src=assets/img/team/oldCood1.jpg width=85px height=100px></p>
+                     <h4 style="color:black;">Swetha Chowdary</h4>
+                     <h5 style="color:black;">Over All Co-ordinator 2016</h5>
+                  </div>
+                  <div class="col-lg-8 blog-content">
+                     <h2>We Define Success</h2>
+                     <p>ELAN has always been a special part of my college life. It's a celebration more than a fest, a celebration of oneness and a celebration of hardwork. I always fall short of words when I have to share my experience as a part of ELAN.
+                        The lessons I learnt helped me grow as a better individual and the family I got is definitely the best.
+                        #Once_an_elanite_always_an_elanite<br><br><br><br>
+                     </p>
+                     <br>
+                  </div>
+               </div>
+               <div class="col-lg-6 blog-bg" style="background-color:#d3b741;">
+                  <div class="col-lg-4 centered">
+                     <br>
+                     <p><img class="img img-circle" src=assets/img/team/oldCood2.jpg width=93px height=100px></p>
+                     <h4 style="color:black;">Vishal Hirani</h4>
+                     <h5 style="color:black;">Over All C0-Ordinator 2015</h5>
+                  </div>
+                  <div class="col-lg-8 blog-content">
+                     <h2>A Beautiful Story</h2>
+                     <p>It is the event when i loved doing work and music filled the ear drums and lot night out are my favorite ever ....<br>Elan is the base of success and I wish it continues to be succesful.<br><br><br><br><br><br><br></p>
+                     <br>
+                  </div>
+               </div>
+            </div>
+            <br><br>
+         </div>
+         <br><br><br><br>
+      </div>
+      <div id=footerwrap1>
+         <div class=container>
+            <span class=col-sm-4>
+              <a href="hapticsroboarm" target="_blank">
+                <button type="button" class="btn btn-danger btn-sm" style="float:left;margin-top:3px;font-size: 13px;font-weight: bold;">HAPTICS ROBOARM WORKSHOP</button>
+              </a>
+             </span>
+            <span class=col-sm-4>
+               <h4 id="footerwrap1Heading">Created by <a href="">Elan</a> - Copyright 2017</h4>
+            </span>
+            <span class="col-sm-4" id=socialLinks>
+            <a href=https://twitter.com/ELAN_IITH target=_blank><i class="fa fa-twitter"></i></a>
+            &nbsp;&nbsp;&nbsp;
+             <a href=https://www.facebook.com/elan.iithyderabad/?fref=ts target=_blank><i class="fa fa-facebook"></i></a>
+             &nbsp;&nbsp;&nbsp;
+ <!--
+<div class="fb-like" data-href="https://www.facebook.com/elan.iithyderabad/?fref=ts" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
+-->
+
+<button type="button" id="faceBookLike" class="btn btn-primary btn-xs" name="button">Like</button>
+<div class="Fbpage">
+  <iframe style="border: none; overflow: hidden; width: 100%; height: 600px; background: white; float: left;" src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/elan.iithyderabad/?fref=ts;width=300&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=600" width="300" height="150" frameborder="0" scrolling="yes"></iframe>
+</div>
+<!-- <div class="fb-like" data-href="https://www.facebook.com/elan.iithyderabad/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div> -->
+&nbsp;&nbsp;&nbsp;
+ <a href=https://www.youtube.com/user/ElanIITHyderabad target=_blank><i class="fa fa-youtube-play"></i></a>
+
+            </span>
+         </div>
+      </div>
+      <script src=assets/js/jquery.min.js></script>
+      <script type=text/javascript src=assets/js/modernizr.custom.js></script>
+      <script type=text/javascript src=assets/js/jquery.1.8.3.min.js></script>
+      <script type=text/javascript src=assets/js/jquery-scrolltofixed.js></script>
+      <script type=text/javascript src=assets/js/jquery.easing.1.3.js></script>
+      <script type=text/javascript src=assets/js/jquery.isotope.js></script>
+      <script type=text/javascript src=assets/js/wow.js></script>
+      <script type=text/javascript src=assets/js/classie.js></script>
+      <script type=text/javascript src=assets/js/bootstrap.min.js></script>
+      <script type=text/javascript src=assets/js/jquery.easing.1.3.js></script>
+      <script type=text/javascript src=assets/js/smoothscroll.js></script>
+      <script type=text/javascript src=assets/js/jquery-func.js></script>
+      <script type=text/javascript>
+          $(document).ready(function(a) {
+              $("#test").scrollToFixed();
+              $(".res-nav_click").click(function() {
+                  $(".main-nav").slideToggle();
+                  return false
+              });
+
+          });
+      </script>
+      <script>
+          wow = new WOW({
+              animateClass: "animated",
+              offset: 100
+          });
+          wow.init();
+      </script>
+      <script type=text/javascript>
+          $(window).load(function() {
+              $(".main-nav li a").bind("click", function(b) {
+                  var a = $(this);
+                  $("html, body").stop().animate({
+                      scrollTop: $(a.attr("href")).offset().top - 102
+                  }, 1500, "easeInOutExpo");
+                  b.preventDefault()
+              })
+          });
+      </script>
+      <script type=text/javascript>
+          $(window).load(function() {
+              var d = $(".portfolioContainer"),
+                  c = $("body"),
+                  a = 375,
+                  b = null;
+              d.isotope({
+                  resizable: true,
+                  masonry: {
+                      columnWidth: a
+                  }
+              });
+              $(window).smartresize(function() {
+                  var e = Math.floor((c.width() - 30) / a);
+                  if (e !== b) {
+                      b = e;
+                      d.width(b * a).isotope("reLayout")
+                  }
+              }).smartresize();
+              $(".portfolioFilter a").click(function() {
+                  $(".portfolioFilter .current").removeClass("current");
+                  $(this).addClass("current");
+                  var e = $(this).attr("data-filter");
+                  d.isotope({
+                      filter: e,
+                  });
+                  return false
+              })
+          });
+      </script><script type="text/javascript">
+/*  $(function () {
+    $("#Portfolio").focus(function(){
+      $("#PortfolioList li a").css("background-color","red");
+    });
+  });*/
+</script>
+   </body>
+</html>

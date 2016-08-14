@@ -1,0 +1,544 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, maximum-scale=1">
+      <title>Elan Gallery</title>
+      <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="css/styleTransation.css" rel="stylesheet" type="text/css">
+      <!--<link href="css/font-awesome.css" rel="stylesheet" type="text/css">-->
+      <link href="css/responsive.css" rel="stylesheet" type="text/css">
+      <link href="css/animate.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <!--[if IE]>
+      <style type="text/css">.pie {behavior:url(PIE.htc);}</style>
+      <![endif]-->
+      <style media="screen">
+      @font-face{font-family:RalewayMedium;src:url('../assets/fonts/Raleway-Medium.ttf');}
+
+         .nav.navbar-nav li a,.dropdown-menu li a{font-family: RalewayMedium; font-size:16px;}
+         #footerwrap1{position:fixed;bottom:0;width:100%;}
+         #footerwrap1{background:#2b2b2b;margin-top:0px;padding-top:4px;padding-bottom:4px;border-bottom:1px solid #ddd;text-align:center;}
+         #footerwrap1 h4{color:white;}
+         #socialLinks{position:absolute;right:0%;padding-top:3.5px;}
+         #socialLinks a i{color:#7FDBBC;}
+         #socialLinks .fb-like:hover{ opacity:0.5;}
+         #socialLinks a i:hover{color:#7FDBBC;opacity:0.5;}
+         @media only screen and (max-width:480px){
+           #socialLinks{position: absolute;top:-1px;font-size: 80%;float: right;padding-top:0px;font-size: 80%;}
+            #footerwrap1{height:6%;background:#2b2b2b;margi5n-top:0px;padding-top:-100px;padding-bottom:10px;border-bottom:0px solid #ddd;text-align:center;}
+            #footerwrap1Heading{display: none;}
+         }
+         @media (max-width:1100px){
+         .navbar-header {
+             float: none;
+         }
+         .navbar-left,.navbar-right {
+             float: none ;//!important;
+         }
+         .navbar-toggle {
+             display: block;
+         }
+         .navbar-collapse {
+             border-top: 1px solid transparent;
+             box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+         }
+         .navbar-fixed-top {
+             top: 0;
+             border-width: 0 0 1px;
+          }
+         .navbar-collapse.collapse {
+             display: none!important;
+         }
+         .navbar-nav {
+             float: none!important;
+             margin-top: 7.5px;
+          }
+
+          .navbar-nav>li {
+             float: none;
+         }
+         .navbar-nav>li>a {
+             padding-top: 10px;
+             padding-bottom: 10px;
+         }
+         .collapse.in{
+             display:block !important;
+         }
+         }
+
+         #faceBookLike{
+           cursor: default;
+         }
+         #faceBookLike:hover + .Fbpage, .Fbpage:hover {
+         display:block;
+         }
+         .Fbpage {
+         background-color:rgba(0,0,0,0.4);
+         width:auto;
+         min-width:50px;
+         height:400px;
+         margin-top:-450px;
+         margin-left:-10px;
+         float:left;
+         display:none;
+         }
+
+         #faceBookLike:active + .Fbpage, .Fbpage:hover {
+         display:block;
+         }
+         .Fbpage {
+         background-color:rgba(0,0,0,0.4);
+         width:auto;
+         min-width:50px;
+         height:400px;
+         margin-top:-450px;
+         margin-left:-10px;
+         float:left;
+         display:none;
+         }
+         .nav.navbar-nav.navbar-right li{
+             margin-top: 5px;
+              border-width: 1px 1px 1px 1px;
+             border-color: white;
+             border-style: solid;
+            }
+
+      </style>
+      <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+      <link rel='shortcut icon' href=../assets/img/favicon.ico type='image/x-icon'/>
+      <style type="text/css">
+         a.fancybox img {
+         border: none;
+         box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+         -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+         }
+         a.fancybox:hover img {
+         position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+         }
+      </style>
+      <!--[if lt IE 9]>
+      <script src="js/respond-1.1.0.min.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/html5element.js"></script>
+      <![endif]-->
+   </head>
+   <!-- #81cfe0
+   #34495E -->
+   <body style="background-color:#81cfe0;background-image: url('img//ag-square.png');">
+     <div id="fb-root"></div>
+<!-- <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script> -->
+
+<nav id=myNavbar class="navbar navbar-inverse navbar-fixed-top" role=navigation>
+   <div class=container>
+      <div class=navbar-header>
+        <button type=button class=navbar-toggle data-toggle=collapse data-target=#navbarCollapse>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+        <a href=../  class="navbar-brand smoothScroll"  >ELAN 2017</a>
+      </div>
+      <div class="collapse navbar-collapse" id=navbarCollapse>
+         <ul class="nav navbar-nav">
+             <li><a href=../#about class=smoothScroll>About</a></li>
+             <li><a href=../#Portfolio class=smoothScroll> Events</a></li>
+            <li><a href=../#workshop class=smoothScroll>Workshops</a></li>
+            <li><a href=../#blog class=smoothScroll>Glimpses</a></li>
+            <!-- <li><a href=team.html target=_blank> Team</a></li> -->
+            <li><a href=../Sponsors.html target=_self>Previous Sponsors</a></li>
+            <li><a href=../campusAmbassador.html target=_self>Campus Ambassador</a></li>
+            <li class=dropdown>
+               <a class=dropdown-toggle data-toggle=dropdown href=#>Feedback<span class=caret></span></a>
+               <ul class=dropdown-menu>
+                  <li><a href=../feedbackElan.php target=_self>Elan Workshop</a></li>
+                  <li><a href=../feedbackAzure.php target=_self>Azure Skynet Workshop</a></li>
+                  <li><a href=../feedbackEntrench.php target=_self>Entrench Electronics Workshop</a></li>
+               </ul>
+            </li>
+         </ul>
+         <ul class="nav navbar-nav navbar-right">
+           <li><a href="../team.html"><span class="glyphicon glyphicon-user"></span> Contact Us</a></li>
+          </ul>
+      </div>
+   </div>
+</nav>
+
+      <nav class="nav navbar-default">
+      </nav>
+      <br><br><br><br>
+      <div class="container">
+         <div class="rosw" >
+            <div class="col-md-6 col-md-offset-3 text-center wrap_title ">
+               <div class="glimp">
+                  <h2>Glimpses Of ELAN</h2>
+                  <p class="lead" style="margin-top:0">We bring you memories</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="main-section paddind" id="Portfolio" style="margin-top:-4.8%;">
+         <!--main-section-start-->
+         <div class="container">
+            <div class="portfolioFilter">
+               <ul class="Portfolio-nav wow fadeIn delay-02s">
+                  <li><a href="#" data-filter="*" class="current" >All</a></li>
+                  <li><a href="#" data-filter=".webdesign" >Events</a></li>
+                  <li><a href="#" data-filter=".branding" >Biggies</a></li>
+                  <li><a href="#" data-filter=".technical" >Crowd</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="portfolioContainer wow fadeInUp delay-04s">
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events1.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events1.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events2.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events2.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events3.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events3.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events4.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events4.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events5.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events5.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events6.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events6.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events7.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events7.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events8.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events8.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events9.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events9.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events10.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events10.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events11.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events11.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events12.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events12.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box webdesign">
+               <a href="img/slide/events13.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/events13.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box branding">
+               <a href="img/slide/biggies1.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/biggies1.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box branding">
+               <a href="img/slide/biggies2.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/biggies2.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box branding">
+               <a href="img/slide/biggies3.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/biggies3.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box branding">
+               <a href="img/slide/biggies4.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/biggies4.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+
+            <div class=" Portfolio-box branding">
+               <a href="img/slide/biggies6.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/biggies6.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box branding">
+               <a href="img/slide/biggies7.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/biggies7.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box branding">
+               <a href="img/slide/biggies8.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/biggies8.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box branding">
+               <a href="img/slide/biggies9.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/biggies9.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box branding">
+               <a href="img/slide/biggies10.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/biggies10.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box branding">
+               <a href="img/slide/biggies11.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/biggies11.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box branding">
+               <a href="img/slide/biggies12.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/biggies12.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box technical">
+               <a href="img/slide/crowd1.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/crowd1.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box technical">
+               <a href="img/slide/crowd2.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/crowd2.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box technical">
+               <a href="img/slide/crowd3.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/crowd3.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box technical">
+               <a href="img/slide/crowd4.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/crowd4.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+            <div class=" Portfolio-box technical">
+               <a href="img/slide/crowd5.jpg" class="image-link" target="_blank" >
+                  <div class="item">
+                     <img  class="img-responsive img-rounded" src="img/slide/crowd5.jpg" alt="Owl Image"  style="width:450px;height:310px;"  >
+                  </div>
+               </a>
+            </div>
+         </div>
+      </section>
+      <!--main-section-end-->
+      <div id=footerwrap1>
+         <div class=container>
+            <span class=col-sm-4>
+              <a href="../hapticsroboarm" target="_blank">
+                <button type="button" class="btn btn-danger btn-sm" style="float:left;margin-top:3px;font-size: 13px;font-weight: bold;">HAPTICS ROBOARM WORKSHOP</button>
+              </a>
+             </span>
+            <span class=col-sm-4>
+               <h4 id="footerwrap1Heading">Created by <a href="../">Elan</a> - Copyright 2017</h4>
+            </span>
+            <span class="col-sm-4" id=socialLinks>
+            <a href=https://twitter.com/ELAN_IITH target=_blank><i class="fa fa-twitter"></i></a>
+            &nbsp;&nbsp;&nbsp;
+             <a href=https://www.facebook.com/elan.iithyderabad/?fref=ts target=_blank><i class="fa fa-facebook"></i></a>
+             &nbsp;&nbsp;&nbsp;
+ <!--
+<div class="fb-like" data-href="https://www.facebook.com/elan.iithyderabad/?fref=ts" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
+-->
+
+<button type="button" id="faceBookLike" class="btn btn-primary btn-xs" name="button">Like</button>
+<div class="Fbpage">
+  <iframe style="border: none; overflow: hidden; width: 100%; height: 600px; background: white; float: left;" src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/elan.iithyderabad/?fref=ts;width=300&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=600" width="300" height="150" frameborder="0" scrolling="yes"></iframe>
+</div>
+<!-- <div class="fb-like" data-href="https://www.facebook.com/elan.iithyderabad/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div> -->
+&nbsp;&nbsp;&nbsp;
+ <a href=https://www.youtube.com/user/ElanIITHyderabad target=_blank><i class="fa fa-youtube-play"></i></a>
+
+            </span>
+         </div>
+      </div>
+   </body>
+</html>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+ <script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+
+<!-- Smoothscroll -->
+<script type="text/javascript" src="js/jquery.corner.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+   new WOW().init();
+</script>
+<script src="js/classie.js"></script>
+<!-- <script src="js/uiMorphingButton_inflow.js"></script> -->
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(e) {
+       $('#test').scrollToFixed();
+       $('.res-nav_click').click(function(){
+           $('.main-nav').slideToggle();
+           return false
+
+       });
+
+   });
+</script>
+<script>
+   wow = new WOW(
+     {
+       animateClass: 'animated',
+       offset:       100
+     }
+   );
+   wow.init();
+
+</script>
+<script type="text/javascript">
+   $(window).load(function(){
+
+   	$('.main-nav li a').bind('click',function(event){
+   		var $anchor = $(this);
+
+   		$('html, body').stop().animate({
+   			scrollTop: $($anchor.attr('href')).offset().top - 102
+   		}, 1500,'easeInOutExpo');
+   		/*
+   		if you don't want to use the easing effects:
+   		$('html, body').stop().animate({
+   			scrollTop: $($anchor.attr('href')).offset().top
+   		}, 1000);
+   		*/
+   		event.preventDefault();
+   	});
+   })
+</script>
+<script type="text/javascript">
+   $(window).load(function(){
+
+
+     var $container = $('.portfolioContainer'),
+         $body = $('body'),
+         colW = 375,
+         columns = null;
+
+
+     $container.isotope({
+       // disable window resizing
+       resizable: true,
+       masonry: {
+         columnWidth: colW
+       }
+     });
+
+     $(window).smartresize(function(){
+       // check if columns has changed
+       var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+       if ( currentColumns !== columns ) {
+         // set new column count
+         columns = currentColumns;
+         // apply width to container manually, then trigger relayout
+         $container.width( columns * colW )
+           .isotope('reLayout');
+       }
+
+     }).smartresize(); // trigger resize to set container width
+     $('.portfolioFilter a').click(function(){
+           $('.portfolioFilter .current').removeClass('current');
+           $(this).addClass('current');
+
+           var selector = $(this).attr('data-filter');
+           $container.isotope({
+
+               filter: selector,
+            });
+            return false;
+       });
+
+   });
+
+</script>
