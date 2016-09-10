@@ -221,9 +221,10 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
    <div class=container>
       <div class=navbar-header>
         <button type=button class=navbar-toggle data-toggle=collapse data-target=#navbarCollapse>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
         <a href=./  class="navbar-brand smoothScroll"  >ELAN 2017</a>
       </div>
@@ -234,7 +235,7 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
             <li><a href=./#workshop class=smoothScroll>Workshops</a></li>
             <li><a href=./#blog class=smoothScroll>Glimpses</a></li>
             <!-- <li><a href=team.html target=_blank> Team</a></li> -->
-            <li><a href=Sponsors.html target=_self>Previous Sponsors</a></li>
+            <li><a href=sponsors.html target=_self>Previous Sponsors</a></li>
             <li><a href=campusAmbassador.html target=_self>Campus Ambassador</a></li>
             <li class='dropdown active'>
                <a class=dropdown-toggle data-toggle=dropdown href=#>Feedback<span class=caret></span></a>

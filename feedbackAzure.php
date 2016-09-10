@@ -87,8 +87,7 @@
        $rate = test_input($_POST["rate"]);
      }
      if($flag==1){
-       $to = "harsh@elan.org.in";
-       $subject = "HTML email";
+
 
        $message = "
        <html>
@@ -149,11 +148,28 @@
        </html>
        ";
 
-       $headers = "From: harsh@elan.org.in \r\n";
-$headers .= "Reply-To: harshaga97@gmail.com \r\n";
- $headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-
+//        $headers = "From: harsh@elan.org.in".PHP_EOL;
+// $headers .= "Reply-To: harshaga97@gmail.com".PHP_EOL;
+//  $headers .= "MIME-Version: 1.0".PHP_EOL;
+// $headers .= "Content-Type: text/html; charset=ISO-8859-1".PHP_EOL;
+$to = "harsh@elan.org.in";
+$subject = "feedback form";
+$type = 'plain'; // or HTML
+$charset = 'utf-8';
+$mail     = 'no-reply@'.str_replace('www.', '', $_SERVER['SERVER_NAME']);
+$uniqid   = md5(uniqid(time()));
+$headers  = 'From: '.$mail."\n";
+$headers .= 'Reply-to: '.$mail."\n";
+$headers .= 'Return-Path: '.$mail."\n";
+$headers .= 'Message-ID: <'.$uniqid.'@'.$_SERVER['SERVER_NAME'].">\n";
+$headers .= 'MIME-Version: 1.0'."\n";
+$headers .= 'Date: '.gmdate('D, d M Y H:i:s', time())."\n";
+$headers .= 'X-Priority: 3'."\n";
+$headers .= 'X-MSMail-Priority: Normal'."\n";
+$headers .= 'Content-Type: multipart/mixed;boundary="----------'.$uniqid.'"'."\n\n";
+$headers .= '------------'.$uniqid."\n";
+$headers .= 'Content-type: text/'.$type.';charset='.$charset.''."\n";
+$headers .= 'Content-transfer-encoding: 7bit';
         //$headers .= 'Cc: myboss@example.com' . "\r\n";
        $answer="";
        if (mail($to,$subject,$message,$headers))
@@ -210,9 +226,10 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
    <div class=container>
       <div class=navbar-header>
         <button type=button class=navbar-toggle data-toggle=collapse data-target=#navbarCollapse>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
         <a href=./  class="navbar-brand smoothScroll"  >ELAN 2017</a>
       </div>
@@ -223,7 +240,7 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
             <li><a href=./#workshop class=smoothScroll>Workshops</a></li>
             <li><a href=./#blog class=smoothScroll>Glimpses</a></li>
             <!-- <li><a href=team.html target=_blank> Team</a></li> -->
-            <li><a href=Sponsors.html target=_self>Previous Sponsors</a></li>
+            <li><a href=sponsors.html target=_self>Previous Sponsors</a></li>
             <li><a href=campusAmbassador.html target=_self>Campus Ambassador</a></li>
             <li class='dropdown active'>
                <a class=dropdown-toggle data-toggle=dropdown href=#>Feedback<span class=caret></span></a>
