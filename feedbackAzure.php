@@ -87,7 +87,8 @@
        $rate = test_input($_POST["rate"]);
      }
      if($flag==1){
-
+       $to = "harsh@elan.org.in";
+       $subject = "HTML email";
 
        $message = "
        <html>
@@ -123,15 +124,14 @@
        </tr>
 
        <tr>
-       <th><strong>Topic</strong></th>
-       <th>Azure Skynet Workshop </th>
-       </tr>
-
-       <tr>
        <th><strong>Email</strong></th>
        <th>$email</th>
        </tr>
 
+       <tr>
+       <th><strong>Topic Of Workshop</strong></th>
+       <th>Azure Skynet Workshop</th>
+       </tr>
 
        <tr>
        <th><strong>Comment</strong></th>
@@ -148,29 +148,11 @@
        </html>
        ";
 
-//        $headers = "From: harsh@elan.org.in".PHP_EOL;
-// $headers .= "Reply-To: harshaga97@gmail.com".PHP_EOL;
-//  $headers .= "MIME-Version: 1.0".PHP_EOL;
-// $headers .= "Content-Type: text/html; charset=ISO-8859-1".PHP_EOL;
-$to = "harsh@elan.org.in";
-$subject = "feedback form";
-$type = 'plain'; // or HTML
-$charset = 'utf-8';
-$mail     = 'no-reply@'.str_replace('www.', '', $_SERVER['SERVER_NAME']);
-$uniqid   = md5(uniqid(time()));
-$headers  = 'From: '.$mail."\n";
-$headers .= 'Reply-to: '.$mail."\n";
-$headers .= 'Return-Path: '.$mail."\n";
-$headers .= 'Message-ID: <'.$uniqid.'@'.$_SERVER['SERVER_NAME'].">\n";
-$headers .= 'MIME-Version: 1.0'."\n";
-$headers .= 'Date: '.gmdate('D, d M Y H:i:s', time())."\n";
-$headers .= 'X-Priority: 3'."\n";
-$headers .= 'X-MSMail-Priority: Normal'."\n";
-$headers .= 'Content-Type: multipart/mixed;boundary="----------'.$uniqid.'"'."\n\n";
-$headers .= '------------'.$uniqid."\n";
-$headers .= 'Content-type: text/'.$type.';charset='.$charset.''."\n";
-$headers .= 'Content-transfer-encoding: 7bit';
-        //$headers .= 'Cc: myboss@example.com' . "\r\n";
+       // Always set content-type when sending HTML email
+       $headers = "From: harsh@elan.org.in \r\n";
+$headers .= "Reply-To: harshaga97@gmail.com \r\n";
+ $headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
        $answer="";
        if (mail($to,$subject,$message,$headers))
        $answer =  '<div class="alert alert-warning">
@@ -381,8 +363,8 @@ $headers .= 'Content-transfer-encoding: 7bit';
       <div id=footerwrap1>
          <div class=container>
             <span class=col-sm-4>
-              <a href="hapticsroboarm" target="_blank">
-                <button type="button" class="btn btn-danger btn-sm" style="float:left;margin-top:3px;font-size: 13px;font-weight: bold;">HAPTICS ROBOARM WORKSHOP</button>
+              <a href="ethicalhacking" target="_blank">
+                <button type="button" class="btn btn-danger btn-sm" style="float:left;margin-top:3px;font-size: 13px;font-weight: bold;">ETHICAL HACKING WORKSHOP</button>
               </a>
              </span>
             <span class=col-sm-4>
