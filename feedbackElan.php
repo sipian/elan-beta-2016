@@ -383,8 +383,8 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
       <div id=footerwrap1>
          <div class=container>
             <span class=col-sm-4>
-              <a href="hapticsroboarm" target="_blank">
-                <button type="button" class="btn btn-danger btn-sm" style="float:left;margin-top:3px;font-size: 13px;font-weight: bold;">HAPTICS ROBOARM WORKSHOP</button>
+              <a href="dubsmash" target="_blank">
+              <button type="button" class="btn btn-danger btn-sm" style="float:left;margin-top:3px;font-size: 13px;font-weight: bold;">DUBSMASH CONTEST</button>
               </a>
              </span>
             <span class=col-sm-4>
