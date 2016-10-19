@@ -1,0 +1,46 @@
+This is the new Workshop Responses Sheet.
+Ignore the last one.
+Here the elan Id's will be added on it's own & email will also be sent.
+Just don't delete any row in the sheet or the Id's can get mismatched.
+If U find any wrong row , leave it as it is & ping me.
+I'll see to that.
+
+
+
+code
+
+
+var EMAIL_SENT = "EMAIL_SENT";
+
+function onFormSubmit(e) {
+
+var sheet = SpreadsheetApp.getActiveSheet();
+  var col = SpreadsheetApp.getActiveSheet().getLastRow();
+var row =  999 + parseInt(col);
+var text = "EL17W1".concat(row.toString());
+ 
+sheet.getRange(col,2).setValue(text);
+
+  var startRow = 2;  // First row of data to process
+  var numRows = 250;   // Number of rows to process
+  // Fetch the range of cells A2:B3
+  var dataRange = sheet.getRange(startRow, 1, numRows, 12)
+  // Fetch values for each row in the Range.
+  var data = dataRange.getValues();
+  for (var i = 0; i < data.length; ++i) {
+    var row = data[i];
+    var emailAddress = row[3];  // First column
+    var message = "Thank You ' " + row[2] +" ' for Registering for\n ELAN 2017 Virtual Reality , Artificial Intelligence , Cloud Computing Workshop. \nYour ELAN ID is " + row[1]+ " .";       // Second column
+    var emailSent = row[11];     // Third column
+    if (emailSent != EMAIL_SENT && emailAddress != "") {  // Prevents sending duplicates
+      var subject = "ELAN 2017 Virtual Reality , Artificial Intelligence , Cloud Computing Workshop Registration";
+      MailApp.sendEmail(emailAddress, subject, message);
+      sheet.getRange(startRow + i, 12).setValue(EMAIL_SENT);
+      // Make sure the cell is updated right away in case the script is interrupted
+      SpreadsheetApp.flush();
+    }
+  }
+
+}
+
+

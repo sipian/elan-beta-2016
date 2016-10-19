@@ -156,6 +156,14 @@ figure.effect-ming p{width:200px;opacity:0;-webkit-transition:opacity 0.35s, -we
    #footerwrap1Heading{position: absolute;top:-9px;font-size: 80%;width: 150px;float: left;}
 
 }
+#mainImage{
+padding-top:2.5%;
+}
+@media only screen and (max-width:480px){
+  #mainImage{
+  padding-top:5%;
+  }
+}
 .nav.navbar-nav li a,.dropdown-menu li a{font-family: RalewayMedium; }
 #workshopLogo:hover{opacity: 0.4;}
 .button-fill {
