@@ -222,7 +222,7 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
              <li><a href=./#about class=smoothScroll>About</a></li>
              <li><a href=./#Portfolio class=smoothScroll> Events</a></li>
             <li><a href=./#workshop class=smoothScroll>Workshops</a></li>
-            <li><a href=./#blog class=smoothScroll>Glimpses</a></li>
+            <li><a href="http://blog.elan.org.in" target="_blank">Blog</a></li>
             <!-- <li><a href=team.html target=_blank> Team</a></li> -->
             <li><a href=sponsors.html target=_self>Previous Sponsors</a></li>
             <li><a href=campusAmbassador.html target=_self>Campus Ambassador</a></li>
@@ -366,8 +366,8 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
       <div id=footerwrap1>
          <div class=container>
             <span class=col-sm-4>
-              <a href="aiworkshop" target="_blank">
-              <button type="button" class="btn btn-danger btn-sm" style="float:left;margin-top:3px;font-size: 13px;font-weight: bold;">Virtual Reality , AI , Cloud Workshop</button>
+              <a href="iotworkshop" target="_blank">
+              <button type="button" class="btn btn-danger btn-sm" style="float:left;margin-top:3px;font-size: 13px;font-weight: bold;">Internet OF Things Workshop</button>
               </a>
              </span>
             <span class=col-sm-4>
